@@ -1,15 +1,25 @@
 
 /**
- * Write a description of class CalendarioBasico here.
+ * This class acts as a basic calendar that lets the user change the default
+ * value of its objects (1-1-1). The user can advance the date one step
+ * at a time or set it at will. It can also return the date as a string
+ * in "dd-mm-yy" format.
+ * 
+ * The calendar doesn't validate the values entered by the user, and it
+ * doesn't check if the given year is a leap year. Only the years between
+ * 2000 and 2099 will be taken into consideration. Every month will have
+ * 30 days.
  *
  * @author (Dídac Fernández Fernández)
  * @version (01/11/2017)
  */
 public class CalendarioBasico
 {
-    // instance variables - replace the example below with your own
+    // Stores the day
     private int day;
+    //Stores the month
     private int month;
+    // Stores the year
     private int year;
 
     /**
@@ -38,8 +48,9 @@ public class CalendarioBasico
     }
 
     /**
-     * Advances the date one day, and considering every month of the year has 30
-     * days, it acts accordingly so for both the month and the year values.
+     * Advances the date one day, and considering every month of the year has
+     * 30 days and every year has 12 months, it acts accordingly so for both
+     * the month and the year values.
      */
     public void advanceDate()
     {
@@ -48,13 +59,13 @@ public class CalendarioBasico
             day = 1;
             month += 1;
         }
-        if(month == 13){
-            month = 1;
-            year += 1;
-        }
-        if(year == 100){
-            year = 1;
-        }
+            if(month == 13){
+                month = 1;
+                year += 1;
+            }
+                if(year == 100){
+                    year = 1;
+                }
     }
 
     /**

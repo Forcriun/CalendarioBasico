@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CalendarioBasico
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CalendarioBasico\ here.\r\n\r\n\ @author\ (D\u00EDdac\ Fern\u00E1ndez\ Fern\u00E1ndez)\r\n\ @version\ (01/11/2017)\r\n
+comment0.text=\r\n\ This\ class\ acts\ as\ a\ basic\ calendar\ that\ lets\ the\ user\ change\ the\ default\r\n\ value\ of\ its\ objects\ (1-1-1).\ The\ user\ can\ advance\ the\ date\ one\ step\r\n\ at\ a\ time\ or\ set\ it\ at\ will.\ It\ can\ also\ return\ the\ date\ as\ a\ string\r\n\ in\ "dd-mm-yy"\ format.\r\n\ \r\n\ The\ calendar\ doesn't\ validate\ the\ values\ entered\ by\ the\ user,\ and\ it\r\n\ doesn't\ check\ if\ the\ given\ year\ is\ a\ leap\ year.\ Only\ the\ years\ between\r\n\ 2000\ and\ 2099\ will\ be\ taken\ into\ consideration.\ Every\ month\ will\ have\r\n\ 30\ days.\r\n\r\n\ @author\ (D\u00EDdac\ Fern\u00E1ndez\ Fern\u00E1ndez)\r\n\ @version\ (01/11/2017)\r\n
 comment1.params=
 comment1.target=CalendarioBasico()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CalendarioBasico.\r\n
@@ -9,7 +9,7 @@ comment2.target=void\ setDate(int,\ int,\ int)
 comment2.text=\r\n\ Sets\ the\ date\ for\ the\ calendar\ according\ to\ the\ values\ introduced\r\n\ by\ the\ user.\ Keep\ in\ mind\ the\ year\ will\ be\ entered\ as\ a\ two\ digit\r\n\ maximum\ value\ (e.g.\:\ 16\ for\ the\ year\ 2016,\ and\ 7\ for\ the\ year\ 2007).\r\n
 comment3.params=
 comment3.target=void\ advanceDate()
-comment3.text=\r\n\ Advances\ the\ date\ one\ day,\ and\ considering\ every\ month\ of\ the\ year\ has\ 30\r\n\ days,\ it\ acts\ accordingly\ so\ for\ both\ the\ month\ and\ the\ year\ values.\r\n
+comment3.text=\r\n\ Advances\ the\ date\ one\ day,\ and\ considering\ every\ month\ of\ the\ year\ has\r\n\ 30\ days\ and\ every\ year\ has\ 12\ months,\ it\ acts\ accordingly\ so\ for\ both\r\n\ the\ month\ and\ the\ year\ values.\r\n
 comment4.params=
 comment4.target=java.lang.String\ getDate()
 comment4.text=\r\n\ Returns\ the\ date\ as\ a\ string\ in\ the\ given\ format\ ("01-01-01").\r\n
