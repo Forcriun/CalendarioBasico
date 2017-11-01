@@ -3,7 +3,7 @@
  * Write a description of class CalendarioBasico here.
  *
  * @author (Dídac Fernández Fernández)
- * @version (a version number or a date)
+ * @version (01/11/2017)
  */
 public class CalendarioBasico
 {
@@ -13,7 +13,7 @@ public class CalendarioBasico
     private int year;
 
     /**
-     * Constructor for objects of class CalendarioBasico
+     * Constructor for objects of class CalendarioBasico.
      */
     public CalendarioBasico()
     {
@@ -21,18 +21,18 @@ public class CalendarioBasico
         day = 1;
         month = 1;
         year = 1;
-        
+
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Sets the date for the calendar according to the values introduced
+     * by the user.
      */
-    public int sampleMethod(int y)
+    public void setDate(int newDay,int newMonth,int newYear)
     {
-        // put your code here
-        return y;
+        day = newDay;
+        month = newMonth;
+        year = newYear;
+
     }
 }
