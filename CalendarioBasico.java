@@ -47,9 +47,12 @@ public class CalendarioBasico
             day = 1;
             month += 1;
         }
-        if(month == 13){
-            month = 1;
-            year += 1;
-        }
+            if(month == 13){
+                month = 1;
+                year += 1;
+            }
+                if(year == 100){
+                    year = 1;
+                }
     }
 }
