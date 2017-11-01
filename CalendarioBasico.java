@@ -55,4 +55,13 @@ public class CalendarioBasico
                     year = 1;
                 }
     }
+    
+    /**
+     * Returns the date as a string in the given format ("01-01-01").
+     */
+    public String getDate()
+    {
+        String d = day + "";
+        return d;
+    }
 }
