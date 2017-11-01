@@ -26,7 +26,8 @@ public class CalendarioBasico
 
     /**
      * Sets the date for the calendar according to the values introduced
-     * by the user.
+     * by the user. Keep in mind the year will be entered as a two digit
+     * maximum value (e.g.: 16 for the year 2016, and 7 for the year 2007).
      */
     public void setDate(int newDay,int newMonth,int newYear)
     {
@@ -47,21 +48,32 @@ public class CalendarioBasico
             day = 1;
             month += 1;
         }
-            if(month == 13){
-                month = 1;
-                year += 1;
-            }
-                if(year == 100){
-                    year = 1;
-                }
+        if(month == 13){
+            month = 1;
+            year += 1;
+        }
+        if(year == 100){
+            year = 1;
+        }
     }
-    
+
     /**
      * Returns the date as a string in the given format ("01-01-01").
      */
     public String getDate()
     {
-        String d = day + "";
-        return d;
+        String stringD = day + "-";
+        String stringM = month + "-";
+        String stringY = year + "";
+        if(day < 10){
+            stringD = "0" + day + "-";
+        }
+        if(month < 10){
+            stringM = "0" + month + "-";
+        }
+        if(year < 10){
+            stringY = "0" + year;
+        }
+        return stringD + stringM + stringY;
     }
 }
