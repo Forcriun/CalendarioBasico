@@ -35,7 +35,7 @@ public class CalendarioBasico
         year = newYear;
 
     }
-    
+
     /**
      * Advances the date one day, and considering every month of the year has 30
      * days, it acts accordingly so for both the month and the year values.
@@ -43,5 +43,13 @@ public class CalendarioBasico
     public void advanceDate()
     {
         day += 1;
+        if(day == 31){
+            day = 1;
+            month += 1;
+        }
+        if(month == 13){
+            month = 1;
+            year += 1;
+        }
     }
 }
