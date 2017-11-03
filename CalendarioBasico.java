@@ -39,7 +39,7 @@ public class CalendarioBasico
      * by the user. Keep in mind the year will be entered as a two digit
      * maximum value (e.g.: 16 for the year 2016, and 7 for the year 2007).
      */
-    public void setDate(int newDay,int newMonth,int newYear)
+    public void fijarFecha(int newDay,int newMonth,int newYear)
     {
         day = newDay;
         month = newMonth;
@@ -52,7 +52,7 @@ public class CalendarioBasico
      * 30 days and every year has 12 months, it acts accordingly so for both
      * the month and the year values.
      */
-    public void advanceDate()
+    public void avanzarFecha()
     {
         day += 1;
         if(day == 31){
@@ -71,7 +71,7 @@ public class CalendarioBasico
     /**
      * Returns the date as a string in the given format ("01-01-01").
      */
-    public String getDate()
+    public String obtenerFecha()
     {
         String stringD = day + "-";
         String stringM = month + "-";
